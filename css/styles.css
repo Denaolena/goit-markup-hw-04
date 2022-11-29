@@ -144,9 +144,12 @@ body {
 
 .icon-smartphone {
   margin-right: 10px;
+  width: 10px;
+  height: 16px;
 }
 .icon-envelope {
   margin-right: 10px;
+  width: 16px;
   height: 12px;
 }
 
@@ -233,6 +236,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -240,7 +245,6 @@ body {
 /* feature-list */
 
 .feature-list .item {
-  width: 270px;
 }
 
 .feature-list .item:not(:last-child) {
@@ -298,7 +302,6 @@ body {
   text-align: center;
 }
 .item-team {
-  margin-left: 30px;
   text-align: center;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -326,12 +329,14 @@ body {
 }
 .icon-social:hover,
 .icon-social:focus {
+  fill: #ffffff;
   background-color: var(--accent-color);
 }
 
 .team-list .item {
   padding-bottom: 30px;
   background-color: #ffffff;
+  align-items: center;
 }
 
 .team-list .title {
@@ -366,13 +371,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* .section-client .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-} */
+.section-client .container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
 
 .section-client .section-title {
   margin-top: 0;
@@ -386,18 +389,27 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.icon-client {
+.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
 
+.icon-client {
+  width: 106px;
+  height: 60px;
   fill: #afb1b8;
 }
 .link-icon:hover svg {
   fill: var(--accent-color);
-  border: 1px solid #2196f3;
+  /* border: 1px solid #2196f3; */
+}
+.link-icon:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .client-list .icon-item:not(:last-child) {
@@ -476,12 +488,12 @@ body {
 }
 
 .text-footer-icon {
-  /* margin-left: 70px; */
+  margin-top: 0px;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  /* padding-top: 72px; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -537,13 +549,14 @@ body {
   margin-right: 8px;
   text-align: center;
   min-width: 73px;
-  padding: 6px 22px;
+  /* padding: 6px 22px; */
   border-radius: 4px;
 
   background-color: #f5f4fa;
 }
 
 .highlighter {
+  padding: 6px 22px;
   border: 1px solid transparent;
   font-weight: 500;
   font-size: 16px;
