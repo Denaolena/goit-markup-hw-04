@@ -105,6 +105,7 @@ body {
 
 .contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
   cursor: pointer;
 }
@@ -112,7 +113,9 @@ body {
   margin-left: 50px;
 }
 
-.contacts .contacts-link {
+.icon-contacts {
+  display: flex;
+  align-items: center;
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -121,29 +124,35 @@ body {
   letter-spacing: 2%;
   text-decoration: none;
 }
-.contacts .contacts-link:hover,
+/* .contacts .contacts-link:hover,
 .contacts .contacts-link:focus {
   color: var(--accent-color);
-}
-.contacts .item {
+} */
+/* .contacts .item {
   display: flex;
   align-items: center;
-}
-.contacts .item:hover {
+} */
+/* .contacts .item:hover {
   color: var(--accent-color);
-}
+} */
 /* .item .contacts-link {
   fill: var(--title-text-color);
 } */
-.icon-envelope:hover,
+/* .icon-envelope:hover,
 .icon-envelope:focus {
   fill: var(--accent-color);
-}
-.contacts .icon-smartphone:hover,
-.icon-smartphone:focus {
+} */
+
+.icon-contacts .icon-envelope:hover {
   fill: var(--accent-color);
 }
 
+.icon-contacts .icon-smartphone:hover {
+  fill: var(--accent-color);
+}
+.icon-contacts:hover {
+  color: var(--accent-color);
+}
 .icon-smartphone {
   margin-right: 10px;
   width: 10px;
