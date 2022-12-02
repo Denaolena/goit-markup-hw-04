@@ -117,6 +117,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--title-text-color);
+  fill: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -157,12 +158,13 @@ body {
   color: var(--accent-color);
 }
 .icon-smartphone {
-  color: #757575;
+  fill: #757575;
   margin-right: 10px;
   width: 10px;
   height: 16px;
 }
 .icon-envelope {
+  fill: #757575;
   margin-right: 10px;
   width: 16px;
   height: 12px;
